@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulir Pendaftaran Ekstrakurikuler</title>
+
+    <!-- Remix Icon -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <div class="school-logo">
+                <div class="logo-icon">
+                    <i class="ri-school-fill"></i>
+                </div>
+
+                <div>
+                    <h3>SMK NEGERI Tengaran</h3>
+                    <span>Formulir Siswa</span>
+                </div>
+            </div>
+
+            <div class="school-year">
+                Tahun Ajaran<br>
+                <strong>2026 / 2027</strong>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-container">
+
+            <span class="hero-label">
+                PENDAFTARAN SISWA
+            </span>
+
+            <h1>
+                Formulir Ekstrakurikuler
+            </h1>
+
+            <p>
+                Silakan isi data diri dan pilih ekstrakurikuler
+                yang ingin kamu ikuti.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- FORM -->
+    <main class="form-container">
+
+        <form id="registrationForm">
+
+            <!-- DATA DIRI -->
+            <div class="form-card">
+
+                <div class="section-title">
+                    <span>01</span>
+
+                    <div>
+                        <h2>Data Diri</h2>
+                        <p>Lengkapi informasi diri kamu</p>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="nama">
+                            Nama Lengkap
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nama"
+                            placeholder="Masukkan nama lengkap"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="nis">
+                            NIS / NISN
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nis"
+                            placeholder="Masukkan NIS / NISN"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="kelas">
+                            Kelas
+                        </label>
+
+                        <select id="kelas" required>
+                            <option value="">Pilih kelas</option>
+                            <option>X RPL 1</option>
+                            <option>X RPL 2</option>
+                            <option>X RPL 3</option>
+                            <option>X RPL 4</option>
+                            <option>X TKJ 1</option>
+                            <option>X TKJ 2</option>
+                            <option>X TKJ 3</option>
+                            <option>X TSM 1</option>
+                            <option>X TSM 2</option>
+                            <option>X TSM 3</option>
+                            <option>X TSM 4</option>
+                            <option>X TKR 1</option>
+                            <option>X TKR 2</option>
+                            <option>X TKR 3</option>
+                            <option>X TKR 4</option>
+                            <option>X DPB 1</option>
+                            <option>X DPB 2</option>
+                            <option>X DPB 3</option>
+                            <option>X DPB 4</option>
+                            <option>X KLN 1</option>
+                            <option>X KLN 2</option>
+                            <option>X KLN 3</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="wa">
+                            Nomor WhatsApp
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="wa"
+                            placeholder="08xxxxxxxxxx"
+                            required
+                        >
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- EKSTRAKURIKULER -->
+            <div class="form-card">
+
+                <div class="section-title">
+                    <span>02</span>
+
+                    <div>
+                        <h2>Pilih Ekstrakurikuler</h2>
+                        <p>Pilih satu ekstrakurikuler</p>
+                    </div>
+                </div>
+
+
+                <div class="extra-grid">
+
+    <label class="extra-option">
+        <input type="radio" name="extra" value="Osis" required>
+
+        <div class="extra-content">
+            <div>
+                <strong>Osis</strong>
+                <small>Kepemimpinan & organisasi</small>
+            </div>
+        </div>
+
+        <i class="ri-check-line check-icon"></i>
+    </label>
+
+
+    <label class="extra-option">
+        <input type="radio" name="extra" value="Pramuka">
+
+        <div class="extra-content">
+            <div>
+                <strong>Pramuka</strong>
+                <small>Kepemimpinan & organisasi</small>
+            </div>
+        </div>
+
+        <i class="ri-check-line check-icon"></i>
+    </label>
+
+
+    <label class="extra-option">
+        <input type="radio" name="extra" value="PMR">
+
+        <div class="extra-content">
+            <div>
+                <strong>PMR</strong>
+                <small>Kesehatan & kemanusiaan</small>
+            </div>
+        </div>
+
+        <i class="ri-check-line check-icon"></i>
+    </label>
+
+
+    <label class="extra-option">
+        <input type="radio" name="extra" value="Paskibra">
+
+        <div class="extra-content">
+            <div>
+                <strong>Paskibra</strong>
+                <small>Kedisiplinan & nasionalisme</small>
+            </div>
+        </div>
+
+        <i class="ri-check-line check-icon"></i>
+    </label>
+
+
+    <label class="extra-option">
+        <input type="radio" name="extra" value="Futsal">
+
+        <div class="extra-content">
+            <div>
+                <strong>Futsal</strong>
+                <small>Olahraga & kekompakan</small>
+            </div>
+        </div>
+
+        <i class="ri-check-line check-icon"></i>
+    </label>
+
+
+    <label class="extra-option">
+        <input type="radio" name="extra" value="Rebana">
+
+        <div class="extra-content">
+            <div>
+                <strong>Rebana</strong>
+                <small>Seni musik & keagamaan</small>
+            </div>
+        </div>
+
+        <i class="ri-check-line check-icon"></i>
+    </label>
+
+
+    <label class="extra-option">
+        <input type="radio" name="extra" value="Jurnalis">
+
+        <div class="extra-content">
+            <div>
+                <strong>Jurnalis</strong>
+                <small>Menulis & informasi</small>
+            </div>
+        </div>
+
+        <i class="ri-check-line check-icon"></i>
+    </label>
+
+
+    <label class="extra-option">
+        <input type="radio" name="extra" value="Bahasa Jepang">
+
+        <div class="extra-content">
+            <div>
+                <strong>Bahasa Jepang</strong>
+                <small>Bahasa & budaya Jepang</small>
+            </div>
+        </div>
+
+        <i class="ri-check-line check-icon"></i>
+    </label>
+
+
+    <label class="extra-option">
+        <input type="radio" name="extra" value="Self Riding">
+
+        <div class="extra-content">
+            <div>
+                <strong>Self Riding</strong>
+                <small>Keterampilan & berkendara</small>
+            </div>
+        </div>
+
+        <i class="ri-check-line check-icon"></i>
+    </label>
+
+
+    <label class="extra-option">
+        <input type="radio" name="extra" value="Rohis">
+
+        <div class="extra-content">
+            <div>
+                <strong>Rohis</strong>
+                <small>Keagamaan & kerohanian</small>
+            </div>
+        </div>
+
+        <i class="ri-check-line check-icon"></i>
+    </label>
+
+
+    <label class="extra-option">
+        <input type="radio" name="extra" value="Paduan Suara">
+
+        <div class="extra-content">
+            <div>
+                <strong>Paduan Suara</strong>
+                <small>Seni vokal & musik</small>
+            </div>
+        </div>
+
+        <i class="ri-check-line check-icon"></i>
+    </label>
+
+
+    <label class="extra-option">
+        <input type="radio" name="extra" value="Tari">
+
+        <div class="extra-content">
+            <div>
+                <strong>Tari</strong>
+                <small>Seni & kreativitas</small>
+            </div>
+        </div>
+
+        <i class="ri-check-line check-icon"></i>
+    </label>
+
+
+    <label class="extra-option">
+        <input type="radio" name="extra" value="Silat">
+
+        <div class="extra-content">
+            <div>
+                <strong>Silat</strong>
+                <small>Bela diri & ketangkasan</small>
+            </div>
+        </div>
+
+        <i class="ri-check-line check-icon"></i>
+    </label>
+
+
+    <label class="extra-option">
+        <input type="radio" name="extra" value="Voli">
+
+        <div class="extra-content">
+            <div>
+                <strong>Voli</strong>
+                <small>Olahraga & kerja sama</small>
+            </div>
+        </div>
+
+        <i class="ri-check-line check-icon"></i>
+    </label>
+
+
+    <label class="extra-option">
+        <input type="radio" name="extra" value="Drumband">
+
+        <div class="extra-content">
+            <div>
+                <strong>Drumband</strong>
+                <small>Musik & kekompakan</small>
+            </div>
+        </div>
+
+        <i class="ri-check-line check-icon"></i>
+    </label>
+
+</div>
+            <!-- ALASAN -->
+            <div class="form-card">
+
+                <div class="section-title">
+                    <span>03</span>
+
+                    <div>
+                        <h2>Alasan Memilih</h2>
+                        <p>Ceritakan alasan kamu memilih ekstrakurikuler tersebut</p>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <textarea
+                        id="alasan"
+                        rows="5"
+                        placeholder="Tuliskan alasan kamu..."
+                        required
+                    ></textarea>
+                </div>
+
+
+                <label class="agreement">
+                    <input type="checkbox" id="agreement" required>
+
+                    <span>
+                        Saya mengisi formulir ini dengan data yang benar.
+                    </span>
+                </label>
+
+            </div>
+
+
+            <!-- BUTTON -->
+            <button type="submit" class="submit-btn">
+                <span>Daftar Sekarang</span>
+                <i class="ri-arrow-right-line"></i>
+            </button>
+
+        </form>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 SMK NUSANTARA. Formulir Ekstrakurikuler.
+        </p>
+    </footer>
+
+
+    <!-- CHATBOT -->
+    <button class="chat-button" id="chatButton">
+        <i class="ri-chat-3-fill"></i>
+    </button>
+
+
+    <div class="chat-box" id="chatBox">
+
+        <div class="chat-header">
+            <div>
+                <strong>Asisten Sekolah</strong>
+                <small>Siap membantu kamu</small>
+            </div>
+
+            <button id="closeChat">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+
+
+        <div class="chat-content" id="chatContent">
+
+            <div class="bot-message">
+                Halo! 👋<br>
+                Ada yang bisa saya bantu tentang pendaftaran ekstrakurikuler?
+            </div>
+
+        </div>
+
+
+        <div class="chat-input">
+            <input
+                type="text"
+                id="chatInput"
+                placeholder="Ketik pesan..."
+            >
+
+            <button id="sendChat">
+                <i class="ri-send-plane-fill"></i>
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- POPUP BERHASIL -->
+    <div class="success-overlay" id="successOverlay">
+
+        <div class="success-popup">
+
+            <button class="popup-close" id="popupClose">
+                <i class="ri-close-line"></i>
+            </button>
+
+
+            <div class="success-icon">
+
+                <svg viewBox="0 0 52 52">
+                    <circle
+                        class="success-circle"
+                        cx="26"
+                        cy="26"
+                        r="25"
+                    />
+
+                    <path
+                        class="success-check"
+                        d="M14 27 L22 35 L39 17"
+                    />
+                </svg>
+
+            </div>
+
+
+            <h2>Pendaftaran Berhasil!</h2>
+
+            <p>
+                Data pendaftaran kamu berhasil dikirim.
+                Terima kasih sudah mendaftar ekstrakurikuler.
+            </p>
+
+
+            <button class="success-button" id="successButton">
+                Selesai
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
